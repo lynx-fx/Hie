@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: blanchedalmond;
+    width: 100%;
+}
+
+body h1{
+    font-size: 60px;
+    color: brown;
+}
+
+body span{
+    color: rgb(244, 180, 61);
+}
+
+.typing-effect {
+    font-size: 60px;
+    font-weight: bold;
+    color: #333;
+    border-right: 0.1em solid #333;
+    width: 8ch;
+    white-space: nowrap;
+    animation: typing 2s steps(9) infinite alternate,
+               blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    0%, 90%, 100% {
+        width: 0;
+    }
+    30%, 60% {
+        width: 8ch;
+    }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #333 }
+}
