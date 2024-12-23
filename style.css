@@ -21,6 +21,11 @@ body span{
     color: rgb(244, 180, 61);
 }
 
+.no-caret{
+    caret-color: transparent;
+    user-select: none;
+}
+
 .typing-effect {
     font-size: 60px;
     font-weight: bold;
